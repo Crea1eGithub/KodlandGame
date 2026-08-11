@@ -42,21 +42,24 @@ def validate_command(broken_code, correct_command1, correct_command2=""):
     )
     raise SystemExit
 
-
-print("Hola AVENTURERO, bienvenido al juego!")
+print("𝓗𝓸𝓵𝓪 𝓐𝓥𝓔𝓝𝓣𝓤𝓡𝓔𝓡𝓞, 𝓫𝓲𝓮𝓷𝓿𝓮𝓷𝓲𝓭𝓸 𝓪𝓵 𝓳𝓾𝓮𝓰𝓸")
+wait(2)
+print("cargando...[librerias, codigo y fuentes]")
+wait(2)
+print("librerias... HECHO")
 wait(1)
-print("Cargando[.      ]")
-wait(1)
-print("Cargando[..     ]")
-wait(1)
-print("Cargando[...    ]")
-wait(3)
+print("codigo... ")
+wait(4)
 print("emm")
 wait(1)
 print("porq no carga? XD")
 wait(1)
 print("Reintentando carga...")
+wait(2)
+print("Cargando codigo... (reintento #1)")
 wait(3)
+print("Cargando codigo... (reintento #2)")
+wait(5)
 print("ERROR: bad input in ALL CODE")
 wait(2)
 print("Recorcholis, no sabia que mi codigo estaba tan mal")
@@ -69,13 +72,15 @@ wait(2)
 if username == "":
     print("Gracias, dime tu nombre para que comencemos!")
     username = input()
-    if username == "":
-        print("hmm, te llamare aventurero anonimo")
-        username = "Aventurero Anonimo"
     if not on_skulpt:
         storage["username"] = username
         print("(Ya dijiste que es ", username, ")")
+    
     print("tu nombre es ", username, "?")
+    if username == "":
+        print("hmm, te llamare aventurero anonimo")
+        username = "Aventurero Anonimo"
+        print("listo?")
     wait(2)
     print("(si)")
     print("Gracias", username, "!")
