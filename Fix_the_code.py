@@ -50,9 +50,9 @@ print("librerias... HECHO")
 wait(1)
 print("codigo... ")
 wait(4)
-print("emm")
+print("DEV: emm")
 wait(1)
-print("porq no carga? XD")
+print("DEV: porq no carga? XD")
 wait(1)
 print("Reintentando carga...")
 wait(2)
@@ -62,37 +62,35 @@ print("Cargando codigo... (reintento #2)")
 wait(5)
 print("ERROR: bad input in ALL CODE")
 wait(2)
-print("Recorcholis, no sabia que mi codigo estaba tan mal")
+print("DEV: Recorcholis, no sabia que mi codigo estaba tan mal")
 wait(1)
-print("me ayudas a arreglarlo? :V")
+print("DEV: me ayudas a arreglarlo? :V")
 wait(2)
 print("(si)")
 wait(2)
 
 if username == "":
-    print("Gracias, dime tu nombre para que comencemos!")
+    print("DEV: Gracias, dime tu nombre para que comencemos!")
     username = input()
     if not on_skulpt:
         storage["username"] = username
         print("(Ya dijiste que es ", username, ")")
     
-    print("tu nombre es ", username, "?")
+    print("DEV: tu nombre es ", username, "?")
     if username == "":
-        print("hmm, te llamare aventurero anonimo")
+        print("DEV: hmm, te llamare aventurero anonimo")
         username = "Aventurero Anonimo"
-        print("listo?")
+        print("DEV: listo?")
     wait(2)
     print("(si)")
-    print("Gracias", username, "!")
+    print("DEV: Gracias", username, "!")
 else:
     print("...")
     wait(1)
     print("¿Como es que aparece que ya te pregunte tu nombre?")
     wait(1)
     print(
-        "Ohh verdad que tu eres",
-        username,
-        ", se me olvido por un momento, no terminaban de cargar las librerias",
+        "DEV: Ohh verdad que tu eres", username,", se me olvido por un momento, no terminaron de cargar las librerias por todos los typos",
     )
 
 if not on_skulpt:
