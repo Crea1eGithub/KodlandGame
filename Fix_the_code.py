@@ -90,9 +90,7 @@ print()
 wait(1)
 
 import turtle
-
 t = turtle.Turtle()
-
 
 validate_command("t.fil('1')", "t.fill(1)")
 t.fill(1)
@@ -128,4 +126,15 @@ wait(2)
 print("DEV: Hmm, eso seria el contorno")
 wait(3)
 print("DEV: vere si ahora si carga")
-#aun no termino
+wait(1)
+print("Reintentando carga...")
+wait(2)
+print("Cargando codigo... (reintento #3)")
+wait(2)
+print("Codigo... HECHO")
+wait(2)
+print("Fuentes... HECHO")
+wait(3)
+print("𝓓𝓲𝓫𝓾𝓳𝓪𝓷𝓭𝓸 𝓒𝓡𝓔𝓔𝓟𝓔𝓡...")
+wait(2)
+t.speed(10)
