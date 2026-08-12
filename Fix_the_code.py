@@ -18,7 +18,7 @@ def wait(seconds):
 code_works = "ok, vamos configurando el trazo"
 
 def validate_command(broken_code, correct_command1, correct_command2=""):
-    user_code = input('"',broken_code,'"         DEV: pon el codigo bien escrito en el input que puse, este no me funciona')
+    user_code = input('"' + broken_code + '"         DEV: pon el codigo bien escrito en el input que puse, este no me funciona')
     print("hmm...")
     wait(2)
 
