@@ -6,7 +6,6 @@ try:
     storage = shelve.open("local_storage")
     username = storage.get("username", "")
     on_skulpt = False
-    print()
 except Exception:
     username = ""
     on_skulpt = True
@@ -19,14 +18,9 @@ def wait(seconds):
 code_works = "ok, vamos configurando el trazo"
 
 def validate_command(broken_code, correct_command1, correct_command2=""):
-    print()
-    user_code = input(
-        '"'
-        + broken_code
-        + '"         #pon el codigo bien escrito en el input que puse, este no me funciona'
-    )
+    user_code = input('"',broken_code,'"         DEV: pon el codigo bien escrito en el input que puse, este no me funciona')
     print("hmm...")
-    time.sleep(2)
+    wait(2)
 
     if correct_command2 == "":
         if user_code == correct_command1:
@@ -37,12 +31,9 @@ def validate_command(broken_code, correct_command1, correct_command2=""):
             print(code_works)
             return True
 
-    print(
-        "hmm, parece que escribiste algo mal, yo creo que debes cerrar y abrir el programa para reiniciarlo"
-    )
-    raise SystemExit
+    print("DEV: hmm, parece que escribiste algo mal, yo creo que debes cerrar y abrir el programa para reiniciarlo")
 
-print("𝓗𝓸𝓵𝓪 𝓐𝓥𝓔𝓝𝓣𝓤𝓡𝓔𝓡𝓞, 𝓫𝓲𝓮𝓷𝓿𝓮𝓷𝓲𝓭𝓸 𝓪𝓵 𝓳𝓾𝓮𝓰𝓸")
+print("𝓗𝓸𝓵𝓪 DIBUJANTE, 𝓫𝓲𝓮𝓷𝓿𝓮𝓷𝓲𝓭𝓸 𝓪𝓵 𝓳𝓾𝓮𝓰𝓸")
 wait(2)
 print("cargando...[librerias, codigo y fuentes]")
 wait(2)
@@ -76,7 +67,7 @@ if username == "":
         storage["username"] = username
         print("(Ya dijiste que es ", username, ")")
     
-    print("DEV: tu nombre es ", username, "?")
+    print('DEV: tu nombre es "', username, '" ?')
     if username == "":
         print("DEV: hmm, te llamare aventurero anonimo")
         username = "Aventurero Anonimo"
@@ -85,13 +76,11 @@ if username == "":
     print("(si)")
     print("DEV: Gracias", username, "!")
 else:
-    print("...")
-    wait(1)
-    print("¿Como es que aparece que ya te pregunte tu nombre?")
-    wait(1)
-    print(
-        "DEV: Ohh verdad que tu eres", username,", se me olvido por un momento, no terminaron de cargar las librerias por todos los typos",
-    )
+        print("...")
+        wait(1)
+        print("DEV: ¿Como es que aparece que ya te pregunte tu nombre?")
+        wait(1)
+        print("DEV: Ohh verdad que tu eres", username,", se me olvido por un momento, no terminaron de cargar las librerias por todos los typos")
 
 if not on_skulpt:
     storage.close()
@@ -113,28 +102,30 @@ validate_command(
 t.pencolor("green")
 wait(2)
 code_works = "buen trabajo, ya vas dibujando el cre- ah verdad que no debo spoilear"
-validate_command("t.forward", "t.forward(100)", "t.fd(100)")
-t.forward(100)
+validate_command("t.walk(160)", "t.forward(160)", "t.fd(160)")
+t.forward(160)
 wait(2)
 validate_command("t.lefet(90)", "t.left(90)", "t.lt(90)")
 t.left(90)
 wait(2)
 print("Vas bien,", username, ", no lo niego")
 wait(2)
-validate_command("t.forward", "t.forward(100)", "t.fd(100)")
-t.forward(100)
+validate_command("t.move(160)", "t.forward(160)", "t.fd(160)")
+t.forward(160)
 wait(2)
 validate_command("t.lefet(90)", "t.left(90)", "t.lt(90)")
 t.left(90)
 wait(2)
-validate_command("t.forward", "t.forward(100)", "t.fd(100)")
-t.forward(100)
+validate_command("t.f0rward(160)", "t.forward(160)", "t.fd(160)")
+t.forward(160)
 wait(2)
 validate_command("t.lefet(90)", "t.left(90)", "t.lt(90)")
 t.left(90)
 wait(2)
-validate_command("t.forward", "t.forward(100)", "t.fd(100)")
-t.forward(100)
+validate_command("t.walk(160)", "t.forward(160)", "t.fd(160)")
+t.forward(160)
 wait(2)
-
-print("[SISTEMA]: Contorno de la cabeza completado con éxito.")
+print("DEV: Hmm, eso seria el contorno")
+wait(3)
+print("DEV: vere si ahora si carga")
+#aun no termino
