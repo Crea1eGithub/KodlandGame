@@ -18,7 +18,7 @@ def wait(seconds):
 code_works = "ok, vamos configurando el trazo"
 
 def validate_command(broken_code, correct_command1, correct_command2=""):
-    user_code = input('"' + broken_code + '"         DEV: pon el codigo bien escrito en el input que puse, este no me funciona')
+    user_code = input("Corrige esto → " + broken_code + " : ")
     print("hmm...")
     wait(2)
 
@@ -88,14 +88,15 @@ if not on_skulpt:
 wait(0.5)
 print()
 wait(1)
+print("(El programa crashea si te equivocas)")
 
 import turtle
 t = turtle.Turtle()
 
-validate_command("t.fil('1')", "t.fill(1)")
-t.fill(1)
+validate_command("t.beginfil('1')", "t.begin_fill()")
+t.begin_fill()
 validate_command("t.colorlapiz('green')", "t.pencolor('green')", 't.pencolor("green")')
-t.color("#00ff00")
+t.fillcolor("#00ff00")
 t.pencolor("green")
 wait(2)
 code_works = "buen trabajo, ya vas dibujando el cre- ah verdad que no debo spoilear"
@@ -137,7 +138,7 @@ wait(3)
 print("𝓓𝓲𝓫𝓾𝓳𝓪𝓷𝓭𝓸 𝓒𝓡𝓔𝓔𝓟𝓔𝓡...")
 wait(2)
 t.speed(0)
-t.fill(0)
+t.begin_fill()
 t.up()
 t.goto(20, 140)
 t.down()
