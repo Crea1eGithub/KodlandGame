@@ -37,11 +37,8 @@ def validate_command(wrong, right1, right2):
         wait(2)
         print("DEV: creo que tienes que reiniciar el programa")
         wait(2)
-        try:
-            sys.exit()
-        except:
-            while True:
-                pass
+        sys.exit()
+
 
 print("𝓗𝓸𝓵𝓪 DIBUJANTE, 𝓫𝓲𝓮𝓷𝓿𝓮𝓷𝓲𝓭𝓸 𝓪𝓵 𝓳𝓾𝓮𝓰𝓸")
 wait(2)
@@ -185,17 +182,3 @@ t.fd(20); t.lt(90); t.fd(40); t.lt(90); t.fd(20); t.rt(90); t.fd(20); t.rt(90)
 t.fd(60); t.rt(90); t.fd(20); t.lt(90); t.fd(20); t.rt(90); t.fd(40); t.rt(90)
 t.end_fill()
 print("DEV: Chau! :D")
-wait(600)
-print("Aguanta, sigues aca despues de 10 minutos?")
-wait(1.5)
-print("Vete, esta es la ultima linea del programa")
-wait(120)
-print("No te dije que te vayas?")
-wait(1.5)
-print("BIEN, YO MISMO CRASHEARE ESTO")
-wait(5)
-try:
-    sys.exit()
-except:
-    while True:
-        pass
